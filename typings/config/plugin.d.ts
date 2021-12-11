@@ -1,4 +1,4 @@
-// This file is created by egg-ts-helper@1.26.0
+// This file is created by egg-ts-helper@1.29.1
 // Do not modify this file!!!!!!!!!
 
 import 'egg';
@@ -14,7 +14,6 @@ import 'egg-schedule';
 import 'egg-static';
 import 'egg-jsonp';
 import 'egg-view';
-import 'egg-mysql';
 import 'egg-cors';
 import { EggPluginItem } from 'egg';
 declare module 'egg' {
@@ -31,7 +30,6 @@ declare module 'egg' {
     static?: EggPluginItem;
     jsonp?: EggPluginItem;
     view?: EggPluginItem;
-    mysql?: EggPluginItem;
     cors?: EggPluginItem;
   }
 }

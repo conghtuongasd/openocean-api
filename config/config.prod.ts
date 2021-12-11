@@ -17,7 +17,7 @@ export default (appInfo: EggAppInfo) => {
   config.security = {
     csrf: {
       enable: false,
-      ignoreJSON: true, 
+      ignoreJSON: true,
       useSession: true,
       headerName: 'x-csrf-token',
     },
@@ -26,7 +26,7 @@ export default (appInfo: EggAppInfo) => {
   // session
   config.session = {
     key: 'EGG_SESS',
-    maxAge: 24 * 3600 * 1000, 
+    maxAge: 24 * 3600 * 1000,
     httpOnly: true,
     encrypt: true,
     path: '/',
@@ -38,18 +38,6 @@ export default (appInfo: EggAppInfo) => {
     consoleLevel: 'DEBUG',
     allowDebugAtProd: true,
     outputJSON: true,
-  };
-
-  config.mysql = {
-    client: {
-      host: '',
-      port: '',
-      user: '',
-      password: '',
-      database: '',
-    },
-    app: true,
-    agent: false,
   };
 
   // add your special config in here
